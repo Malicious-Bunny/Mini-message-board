@@ -1,0 +1,20 @@
+<div>
+    <!-- loop through the message array and disply msg-->
+    <% messages.forEach(function(message){ %>
+        <div>
+            <h3>
+                <%= message.user %>
+            </h3>
+            <p>
+                <%= message.text %>
+            </p>
+            <p>
+                <%= message.added %>
+            </p>
+
+            <a href="/message/<%= message.user %>">Open</a>
+
+            <br>
+        </div>
+    <% }); %>
+</div>

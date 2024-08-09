@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <p>Welcome</p>
+
+        <%- include('message', {messages : messages}) %>
+
+
+        <a href="/new">Add a new message</a>
+    </body>
+</html>

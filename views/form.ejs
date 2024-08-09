@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <p>Fill out the form below</p>
+
+        <form action="/new" method="post">
+            <label for="name">Author:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
